@@ -367,7 +367,8 @@ def encode_burst(h264_path):
             '-f', 'h264', '-framerate', fps_in, '-i', h264_path,
             '-filter_complex',
                 f'[0:v]{frame_filt}[frames];'
-                '[frames]palettegen=max_colors=256:stats_mode=full',
+                '[frames]palettegen=max_colors=256:stats_mode=full[pal]',
+            '-map', '[pal]',
             '-frames:v', '1', palette,
         ], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -382,7 +383,8 @@ def encode_burst(h264_path):
             '-i', palette,
             '-filter_complex',
                 f'[0:v]{frame_filt}[frames];'
-                '[frames][1:v]paletteuse=dither=bayer:bayer_scale=5',
+                '[frames][1:v]paletteuse=dither=bayer:bayer_scale=5[gif]',
+            '-map', '[gif]',
             '-loop', '0',
             gif_out,
         ], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
