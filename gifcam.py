@@ -3,6 +3,11 @@
 gifcam.py — Pix-E GIF Camera
 For Raspberry Pi Zero 2 W + Camera Module 3 (IMX708)
 
+Based on the original Pix-E GIF Camera by Nick Brewer
+  https://github.com/nickbrewer/gifcam
+Substantially rewritten for picamera2, hardware H.264 encoding,
+two-pass GIF transcoding, and Telegram/email delivery.
+
 GPIO pins:
   BUTTON_PIN     = 19   shutter button, active LOW with internal pull-up
   BUTTON_LED_PIN = 21   LED inside shutter button

@@ -1,6 +1,6 @@
 # gifcam
 
-A Raspberry Pi GIF camera based on [Pix-E GIF Camera](https://www.hackster.io/nick-brewer/pix-e-gif-camera-323965) by Nick Brewer. This is an updated and extended version with improved capture quality, optional Telegram and email delivery, and several new features.
+A Raspberry Pi GIF camera based on [Pix-E GIF Camera](https://www.hackster.io/nick-brewer/pix-e-gif-camera-323965) by Nick Brewer ([GitHub](https://github.com/nickbrewer/gifcam)). This is an updated and extended version with improved capture quality, optional Telegram and email delivery, and several new features.
 
 ## Hardware
 
