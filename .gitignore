@@ -1,0 +1,21 @@
+# Config files with credentials (chmod 600 on device)
+.telegram_config
+.email_config
+.sent_gifs
+.sent_gifs_email
+
+# Runtime directories
+pending/
+gifs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+New Text Document.txt
